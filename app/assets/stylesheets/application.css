@@ -13,3 +13,75 @@
  *= require_tree .
  *= require_self
  */
+
+ .container {
+   position: relative;
+   width:70%;
+	 height:120px;
+	 background: #313030;
+   border-radius: 15px;
+	 margin:50px auto;
+   text-align: center;
+   padding: 0px 20px 20px 20px;
+ }
+ .container:before, .container:after
+ {
+   z-index: -1;
+   position: absolute;
+   content: "";
+   bottom: 15px;
+   left: 10px;
+   width: 50%;
+   top: 80%;
+   max-width:300px;
+   background: #313030;
+   -webkit-box-shadow: 0 15px 10px #313030;
+   -moz-box-shadow: 0 15px 10px #313030;
+   box-shadow: 0 15px 10px #313030;
+   -webkit-transform: rotate(-3deg);
+   -moz-transform: rotate(-3deg);
+   -o-transform: rotate(-3deg);
+   -ms-transform: rotate(-3deg);
+   transform: rotate(-3deg);
+
+ }
+ .container:after
+ {
+   -webkit-transform: rotate(3deg);
+   -moz-transform: rotate(3deg);
+   -o-transform: rotate(3deg);
+   -ms-transform: rotate(3deg);
+   transform: rotate(3deg);
+   right: 10px;
+   left: auto;
+ }
+
+
+
+
+ button {
+  border-radius: 5px;
+  color: #bdbbb6;
+  font-family: 'News Cycle', sans-serif;
+  background-color: #515050;
+}
+
+h1 {
+  font-family: 'Euphoria Script', cursive;
+  color: #bdbbb6;
+}
+
+button {
+   display: inline-block;
+   vertical-align: middle;
+   transform: translateZ(0);
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+   backface-visibility: hidden;
+   -moz-osx-font-smoothing: grayscale;
+   transition-duration: 0.3s;
+   transition-property: transform;
+}
+
+button:hover {
+  transform: scale(1.5);
+}
