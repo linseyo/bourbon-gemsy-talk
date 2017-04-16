@@ -13,11 +13,21 @@
  *= require_tree .
  *= require_self
  */
+ html {
+   background-color:black;
+   background-image:
+   radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+   radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+   radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+   radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+ }
 
  .container {
    position: relative;
-   width:70%;
-	 height:120px;
+   width:30%;
+	 height: 30%;
 	 background: #313030;
    border-radius: 15px;
 	 margin:50px auto;
@@ -34,10 +44,10 @@
    width: 50%;
    top: 80%;
    max-width:300px;
-   background: #313030;
-   -webkit-box-shadow: 0 15px 10px #313030;
-   -moz-box-shadow: 0 15px 10px #313030;
-   box-shadow: 0 15px 10px #313030;
+   background: #bdbbb6;
+   -webkit-box-shadow: 0 15px 10px #bdbbb6;
+   -moz-box-shadow: 0 15px 10px #bdbbb6;
+   box-shadow: 0 15px 10px #bdbbb6;
    -webkit-transform: rotate(-3deg);
    -moz-transform: rotate(-3deg);
    -o-transform: rotate(-3deg);
@@ -56,7 +66,10 @@
    left: auto;
  }
 
-
+p {
+  color: white;
+  font-family: 'News Cycle', sans-serif;
+}
 
 
  button {
@@ -83,5 +96,5 @@ button {
 }
 
 button:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
