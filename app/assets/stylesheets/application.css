@@ -80,7 +80,7 @@ p, table {
   background-color: #515050;
 }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: 'Euphoria Script', cursive;
   color: #bdbbb6;
 }

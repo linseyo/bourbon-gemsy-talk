@@ -12,7 +12,11 @@
       <td><%= link_to 'Read More', post_path(post) %></td>
       <td>|</td>
       <td><%= link_to 'Edit', edit_post_path(post) %></td>
+      <td>|</td>
+      <td><%= link_to 'Delete', post_path(post),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
-  <%= link_to 'New Entry', new_post_path %>
+  <%= link_to 'New Post', new_post_path %>
 </table>
