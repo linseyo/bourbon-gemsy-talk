@@ -72,6 +72,9 @@ p, table {
   font-family: 'News Cycle', sans-serif;
 }
 
+#comments p {
+  font-size: 10px;
+}
 
  button {
   border-radius: 5px;
@@ -126,3 +129,7 @@ a:active {
 td:nth-child(1) {
     padding-right: 20px;
 }​
+
+#comments p {
+  font-size: 10px;
+}
