@@ -10,6 +10,8 @@
     <tr>
       <td><%= post.title %></td>
       <td><%= link_to 'Read More', post_path(post) %></td>
+      <td>|</td>
+      <td><%= link_to 'Edit', edit_post_path(post) %></td>
     </tr>
   <% end %>
   <%= link_to 'New Entry', new_post_path %>

@@ -121,3 +121,8 @@ a:hover {
 a:active {
   color: #926f58;
 }
+
+
+td:nth-child(1) {
+    padding-right: 20px;
+}​
