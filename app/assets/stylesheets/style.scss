@@ -85,9 +85,7 @@ button {
   }
 }
 
-// button {
-//   @include button(shiny, #ff0000);
-// }
+
 
 
 /* unvisited link */
@@ -104,7 +102,6 @@ a:visited {
 /* mouse over link */
 a:hover {
  color: #000;
- // @include transition(all 2s $ease-in-quad);
 
 }
 

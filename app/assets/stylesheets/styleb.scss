@@ -1,0 +1,25 @@
+.container {
+  @include border-color(gray lavender);
+  @include border-top-radius(5px);
+  @include border-width(1em);
+  @include border-style(dashed);
+  @include padding(0px 20px 20px 20px);
+  @include margin(50px auto);
+  background: tint(gray, 40%);
+
+
+}
+
+button {
+  @include button(shiny, #ff0000);
+}
+
+a:hover {
+ color: #fff;
+ @include transition(all 1s $ease-in-quad);
+
+}
+table {
+  @include triangle(12px, gray, down);
+  @include triangle(12px 6px, gray lavender, up-left);
+}
