@@ -1,0 +1,123 @@
+// Setting variables for cleaner styling <---FUNCTION OF SASS
+$main-font: 'News Cycle', sans-serif;
+
+html {
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  font-family: $main-font;
+}
+
+.container {
+  position: relative;
+  width:30%;
+  height: 30%;
+  background: #313030;
+  border-radius: 15px;
+  margin:50px auto;
+  text-align: center;
+  padding: 0px 20px 20px 20px;
+}
+.container:before, .container:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #bdbbb6;
+  -webkit-box-shadow: 0 15px 10px #bdbbb6;
+  -moz-box-shadow: 0 15px 10px #bdbbb6;
+  box-shadow: 0 15px 10px #bdbbb6;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+
+}
+.container:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+p, table {
+ color: white;
+ font-family: $main-font;
+}
+
+
+h1, h2, h3, h4 {
+ font-family: 'Euphoria Script', cursive;
+ color: #bdbbb6;
+}
+
+// Nested Elements <--- FEATURE OF SASS
+button {
+  border-radius: 5px;
+  color: #bdbbb6;
+  font-family: $main-font;
+  background-color: #515050;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+// button {
+//   @include button(shiny, #ff0000);
+// }
+
+
+/* unvisited link */
+a:link {
+ color: #d89f9f;
+ text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+ color: #bdbbb6;
+}
+
+/* mouse over link */
+a:hover {
+ color: #000;
+ // @include transition(all 2s $ease-in-quad);
+
+}
+
+/* selected link */
+a:active {
+ color: #926f58;
+}
+
+
+td:nth-child(1) {
+   padding-right: 20px;
+}​
+
+#comments p {
+ font-size: 10px;
+}

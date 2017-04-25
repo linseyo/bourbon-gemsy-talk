@@ -1,24 +1,38 @@
-# README
+# Bourbon
+A simple & lightweight mixin library for SASS
+Includes a variety of SASS mixins to make it easier to work with CSS
+Makes it easier to add CSS through SASS
+## Install:
+```
+gem install bourbon
+```
+Rename our application.css to be .scss
+```
+app/assets/stylesheets/application.scss
+```
+Delete sprocket
+```
+*= require_tree .
+```
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Include bourbon + any other stylesheets at the top of the new application.scss
+```
+@import "bourbon";
+@import "NAMEOFOTHERSTYLESHEETS";
+```
+### Using Bourbon + Other Fun Stuff:
+Bourbon is apart of a bigger family of SASS tools
+*Neat <--Bourbon Grid Framework
+*Bitters <--Scaffold, Styles & Structures
+*Refills <--Components & Patterns for Bourbon
+### Resources:
+* [Bourbon-Docs]
+* [Bourbon-Github]
+* [Info On Sass]
 
-Things you may want to cover:
+[Bourbon-Docs]: <http://bourbon.io/>
+[Info On Sass]: <https://www.sitepoint.com/architecture-in-sass/>
+[Bourbon-Github]: <https://github.com/thoughtbot/bourbon>
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Example:
+my_blog rails app
