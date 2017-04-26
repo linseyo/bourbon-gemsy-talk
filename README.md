@@ -1,5 +1,5 @@
 # Bourbon
-A simple & lightweight mixin library for SASS
+A simple & lightweight mixin library for SASS (a CSS compiler)
 Includes a variety of SASS mixins to make it easier to work with CSS
 Makes it easier to add CSS through SASS
 ## Install:
